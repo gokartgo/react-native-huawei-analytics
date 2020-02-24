@@ -1,0 +1,45 @@
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {url 'http://developer.huawei.com/repo/'}
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.huawei.agconnect:agcp:1.2.0.300'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion = "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {url 'http://developer.huawei.com/repo/'}
+}
+
+def DEFAULT_SUPPORT_LIB_VERSION = "27.1.1"
+def supportVersion = rootProject.hasProperty('supportLibVersion') ? rootProject.supportLibVersion : DEFAULT_SUPPORT_LIB_VERSION
+
+dependencies {
+    compile 'com.facebook.react:react-native:+'
+    api "com.android.support:support-v4:$supportVersion"
+    implementation 'com.huawei.hms:hianalytics:4.0.1.300'
+}
+  
