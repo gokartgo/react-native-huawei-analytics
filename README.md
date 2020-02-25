@@ -39,6 +39,9 @@ HuaweiAnalytics.setUserId('userId')
 HuaweiAnalytics.setUserProperty('name','value')
 HuaweiAnalytics.setUserProperties({name: value}) ( เหมือน setUserProperty แค่ input ต่างกัน
 
+### Credit
+
+https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/Development-Guide#h1-6-accessing-analytics
 
 # react-native-huawei-analytics
 
