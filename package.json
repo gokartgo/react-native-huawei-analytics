@@ -12,9 +12,16 @@
     "url": "git@github.com:gokartgo/react-native-huawei-analytics.git"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "analytics",
+    "huawei",
+    "npm",
+    "yarn"
   ],
-  "author": "",
+  "bugs": {
+    "url": "https://github.com/gokartgo/react-native-huawei-analytics/issues"
+  },
+  "author": "Kritchanon Limtongsittikun",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",

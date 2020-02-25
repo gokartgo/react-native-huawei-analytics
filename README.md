@@ -39,7 +39,21 @@ HuaweiAnalytics.setAnalyticsCollectionEnabled( boolean )
 HuaweiAnalytics.setCurrentScreen('screenName','screenClassOverride')
 HuaweiAnalytics.setUserId('userId')
 HuaweiAnalytics.setUserProperty('name','value')
-HuaweiAnalytics.setUserProperties({name: value}) ( เหมือน setUserProperty แค่ input ต่างกัน
+HuaweiAnalytics.setUserProperties({name: value}) ( work same setUserProperty but only type input is different )
+
+##### ส่วนของ logEvent
+- {key: value} จะต้องเข้าไป set ใน Analytics ด้วย
+    -   Login ที่ AppGallery Connect แล้วเลือก Analytics
+    -   Click เลือก App ที่เราต้องการ set key value
+    -   ไปที่ Advanced Analysis > Meta manage > Event
+
+![Image logEvent](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200111152632.88019175743704493106408528668179:50510218132328:2800:F5F501456A406FF1062203923018D1A3052F8E2EA4F663541F81DF647C4D0C94.png?needInitFileName=true?needInitFileName=true?needInitFileName=true)
+
+หมายเลข 5 คือการสร้าง event ใหม่
+หมายเลข 4 คือการเพิ่ม parameter ขอ event นั้นๆ
+เมื่อกด หมายเลข 4 ก็จะพบหน้าต่าง
+![Image Edit Event](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20200111152701.37513256755064144137057073699285:50510218132328:2800:B255F6401359CF335975D48F1E105C7F541A55EECD252EE64C6BF232B54B8EA4.png?needInitFileName=true?needInitFileName=true?needInitFileName=true)
+-   พิมชื่อ parameter ที่ต้องการสร้างแล้วกดปุ่ม Add แล้ว set Parameter name กับ Type แล้วกด Save เป็นอันเสร็จ (อาจต้องรอ 1วัน ถึงค่า parameter จะใช้งานได้)
 
 ### Credit
 
