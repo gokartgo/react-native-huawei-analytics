@@ -1,5 +1,7 @@
 # Huawei Analytics Android
 
+not support in ios and windows because huawei is android phone
+
 ## Integrating
 ### Setup In Android React Native Project
 1\. Add agconnect-services.json ( Path android/app )
@@ -57,12 +59,6 @@ https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/Development-
 ### Manual installation
 
 
-#### iOS
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-huawei-analytics` and add `RNReactNativeHuaweiAnalytics.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNReactNativeHuaweiAnalytics.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
 
 #### Android
 
@@ -79,20 +75,15 @@ https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/Development-
       compile project(':react-native-huawei-analytics')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNReactNativeHuaweiAnalytics.sln` in `node_modules/react-native-huawei-analytics/windows/RNReactNativeHuaweiAnalytics.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using React.Native.Huawei.Analytics.RNReactNativeHuaweiAnalytics;` to the usings at the top of the file
-  - Add `new RNReactNativeHuaweiAnalyticsPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
 
 ## Usage
 ```javascript
-import RNReactNativeHuaweiAnalytics from 'react-native-huawei-analytics';
-
-// TODO: What to do with the module?
-RNReactNativeHuaweiAnalytics;
+import HuaweiAnalytics from 'react-native-huawei-analytics'
+HuaweiAnalytics.logEvent('name',{ key: value })
+HuaweiAnalytics.setAnalyticsCollectionEnabled( boolean )
+HuaweiAnalytics.setCurrentScreen('screenName','screenClassOverride')
+HuaweiAnalytics.setUserId('userId')
+HuaweiAnalytics.setUserProperty('name','value')
+HuaweiAnalytics.setUserProperties({name: value}) ( เหมือน setUserProperty แค่ input ต่างกัน
 ```
   
