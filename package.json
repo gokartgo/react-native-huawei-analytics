@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-huawei-analytics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react native huawei analytics",
   "main": "index.js",
   "scripts": {
